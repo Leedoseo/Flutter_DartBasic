@@ -1,0 +1,39 @@
+// dartpad.dev로 Dart언어 공부 1일차 
+// 1. 변수선언
+
+// void main() {
+//   var name = '이도서';
+//   print(name);
+
+//   name = '도서';
+//   print(name);
+// }
+// 출력값 이도서 도서
+
+// void main() {
+//   dynamic name = '이도서';
+//   print(name.runtimeType); // String
+
+//   name = 1;
+//   print(name.runtimeType); // Int
+// }
+
+// void main() {
+//   final String name = '이도서';
+//   name = 'Leedoseo'; // 런타임 에러
+
+//   const String name2 = '도서';
+//   name = 'Doseo'; // 컴파일 타임 에러
+// }
+
+// void main() {
+//   final DateTime now = DateTime.now();
+  
+//   print(now);
+// }
+
+// void main() {
+//   const DateTime now = DateTime.now();
+  
+//   print(now);
+// }
