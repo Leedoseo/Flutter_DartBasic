@@ -1,0 +1,118 @@
+// List 타입
+// void main() {
+//   // 리스트에 넣을 타입을 <> 사이에 명시할 수 있음.
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   print(blackPinkList);
+//   print(blackPinkList[0]);
+//   print(blackPinkList[3]);
+  
+//   print(blackPinkList.length);
+  
+//   blackPinkList[3] = '이도서';
+//   print(blackPinkList);
+// }
+
+// add함수
+// void main() {
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   blackPinkList.add('이도서'); // 리스트 끝에 추가
+  
+//   print(blackPinkList);
+// }
+
+// where함수
+// void main() {
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   final newList = blackPinkList.where(
+//     (name) => name == '리사' || name == '지수', // 리사 또는 지수만 유지
+//   );
+  
+//   print(newList);
+//   print(newList.toList()); // Iterable을 List로 다시 변환할 때 .toList() 사용
+// }
+
+// map함수
+// void main() {
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   final newBlackPink = blackPinkList.map(
+//     (name) => '블랙핑크 $name', // 리스트의 모든 값 앞에 '블랙핑크'추가
+//   );
+//   print(newBlackPink);
+  
+//   // Interable을 List로 다시 변환하고 싶을 때 .toList() 사용
+//   print(newBlackPink.toList());
+// }
+
+// reduce함수
+// void main() {
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   final allMembers = blackPinkList.reduce((value, element) => value + ', ' + element);
+  
+//   print(allMembers);
+// }
+
+// fold함수
+// void main() {
+//   List<String> blackPinkList = ['리사', '지수', '제니', '로제'];
+  
+//   // reduce() 함수와 마찬가지로 각 요소를 순회하며 실행됨.
+//   final allMembers = blackPinkList.fold<int>(0, (value, element) => value + element.length);
+  
+//   print(allMembers);
+// }
+
+// Map 타입
+// void main() {
+//   Map<String, String> dictionary = {
+//     "Harry Potter" : "해리포터",
+//     "Ron Weasley" : "론 위즐리",
+//     "Hermione Granger" : "헤르미온느 그레인저",
+//   };
+//   print(dictionary["Harry Potter"]);
+//   print(dictionary["Hermione Granger"]);
+// }
+
+// Map타입 키와 값 반환받기
+// void main() {
+//   Map<String, String> dictionary = {
+//     "Harry Potter" : "해리포터",
+//     "Ron Weasley" : "론 위즐리",
+//     "Hermione Granger" : "헤르미온느 그레인저",
+//   };
+//   print(dictionary.keys);
+//   // Iterable이 반환되기 때문에 .toList()를 실행해서 List를 반환받을 수도 있음.
+//   print(dictionary.values);
+//   print(dictionary.keys.toList());
+//   print(dictionary.values.toList());
+// }
+
+// Set타입
+// void main() {
+//   Set<String> blackPink = {"로제", "지수", "리사", "제니", "제니"}; // 제니 중복됨
+  
+//   print(blackPink);
+//   print(blackPink.contains("로제")); // 값이 있는지 확인
+//   print(blackPink.toList()); // 리스트로 변환하기
+  
+//   List<String> blackPink2 = ["로제", "지수", "지수"];
+//   print(Set.from(blackPink2));
+// }
+
+// enum
+enum Status { // Status라는 열거형을 정의함
+  approved, // 승인
+  pending,  // 대기 중
+  rejected, // 거절
+}
+
+void main() {
+  Status status = Status.approved; // status라는 변수를 선언함, 타입은 Status enum이라는 뜻
+                                   // 그리고 status의 상태를 approved 상태로 초기화했음
+  print(status);                   // 출력값을 보면 Status.approved인데, Dart의 enum은 타입명.값 형태로 출력해줌
+  print(status.index);             // 이것은 approved가 0번째기 때문에 0이라고 출력됨, 만약 pending이었으면 1로 나옴.
+}                                  
