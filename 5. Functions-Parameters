@@ -1,0 +1,74 @@
+// 함수의 일반적인 특징
+// int addTwoNumbers(int a, int b) {
+//   return a + b;
+// }
+
+// void main() {
+//   print(addTwoNumbers(1, 2));
+// }
+
+// 네임드 파라미터로 변환
+// int addTwoNumbers({
+//   required int a,
+//   required int b,
+// }) {
+//   return a + b;
+// }
+
+// void main() {
+//   print(addTwoNumbers(a: 1, b: 2));
+// }
+
+
+// 포지셔널 파라미터 예시
+// void greet(String name, int age) {
+//   print('👋 Hello, $name! You are $age years old.');
+// }
+
+// void main() {
+//   greet('Alice', 25); // 순서대로 인자 전달
+// }
+
+// // 포지셔널 파라미터를 지정
+// int addTwoNumbers(int a, [int b = 2]) {
+//   return a + b;
+// }
+
+// void main() {
+//   print(addTwoNumbers(1));
+// }
+
+// 네임드 파라미터 예시
+// void greet({required String name, required int age}) {
+//   print('👋 Hello, $name! You are $age years old.');
+// }
+
+// void main() {
+//   greet(name: 'Bob', age: 30); // 이름으로 인자를 전달
+// }
+
+
+// 네임드 파라미터에 기본값을 적용하는방법
+// int addTwoNumbers ({
+//   required int a,
+//   int b= 2
+// }) {
+//   return a + b;
+// }
+
+// void main() {
+//   print(addTwoNumbers(a: 1));
+// }
+
+// 포지셔널 파라미터와 네임드 파라미터 섞어서 사용하는 방법
+// int addTwoNumbers(
+//   int a, {
+//   required int b,
+//   int c = 4,
+// }) {
+//   return a + b + c;
+// }
+
+// void main() {
+//   print(addTwoNumbers(1, b:3, c: 7));
+// }
