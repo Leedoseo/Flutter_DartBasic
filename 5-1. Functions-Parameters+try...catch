@@ -1,0 +1,84 @@
+// 익명 함수로 List의 모든 값들을 더하는 로직
+// void main() {
+//   List<int> numbers = [1, 2, 3, 4, 5];
+  
+//   final allMembers = numbers.reduce((value, element) {
+//     return value + element;
+//   });
+  
+//   print(allMembers);
+// }
+
+// 람다 함수로 List의 모든 값들을 더하는 로직
+// void main() {
+//   List<int> numbers = [1, 2, 3, 4, 5];
+  
+//   final allMembers = numbers.reduce((value, element) => value + element);
+  
+//   print(allMembers);
+// }
+
+// typedef와 함수
+// typedef Operation = void Function(int x, int y);
+
+// void add(int x, int y) {
+//   print("결과값 : ${x + y}");
+// }
+
+// void subtract(int x, int y) {
+//   print("결과값 : ${x - y}");
+// }
+
+// void main() {
+//   // typedef는 일반적인 변수의 type처럼 사용 가능
+//   Operation oper = add;
+//   oper(1, 2);
+  
+//   // subtract() 함수도 Operation에 해당되는 시그니처 이므로 oper변수에 저장 가능
+//   oper = subtract;
+//   oper(1, 2);
+// }
+
+// typedef Operation = void Function(int x, int y);
+
+// void add(int x, int y) { // add라는 함수를 선언, 파라미터는 int x, int y, 반환 타입은 : void(아무것도 리턴하지 않음) 
+//   print("결과 값 : ${x + y}");
+// }
+
+// void calculate(int x, int y, Operation oper) { // 이곳에 있는 int x, int y, Operation oper는 파라미터
+//   oper(x, y); // oper는 아까 전달한 add 함수 자체임 즉, oper == add
+//               // 즉, oper == add라는 뜻, 결국엔 add(x, y)인 것임 여기에있는 x, y는 아규먼트
+// }
+
+// void main() {
+//   calculate(1, 2, add); // 여기에 있는 1, 2, add도 아규먼트
+// }
+
+// try...catch문
+// 에러 없는 코드
+// void main() {
+//   try {
+//     // 에러가 없을 때 실행할 로직
+//     final String name = "이도서의 코딩 노트";
+    
+//     print(name); // 에러가 없으면 "이도서의 코딩 노트" 출력
+//   } catch(error) {
+//     //에러가 있을 때 로직
+//     print(error);
+//   }
+// }
+
+// 에러 있는 코드
+void main() {
+  try {
+    final String name = "이도서의 코딩 노트";
+    
+    throw Exception("이름이 잘못됐음!"); // 고의로 에러 발생
+    
+    print(name);
+  } catch(error) {
+    
+    // try에서 에러가 발생해서 catch로직이 실행됨.
+    print(error);
+  }
+}
