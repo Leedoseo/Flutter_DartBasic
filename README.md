@@ -3,10 +3,22 @@
 ## ✅ 1. 변수 선언
 
 ```dart
-var name = "이도서"; // 타입 추론, String으로 고정됨
-dynamic anything = 123; // 타입 유동적, 나중에 String 등으로 변경 가능
-final age = 30; // 한 번만 할당 가능, 런타임에 결정됨
-const pi = 3.14; // 완전 불변, 컴파일 타임에 값 결정됨
+// main 함수 + print() 예시
+void main() {
+  // 콘솔에 출력
+  print('hello world');
+}
+
+// var 선언 예시
+void main() {
+  var name = '이도서';
+  print(name);
+
+  name = '도서';
+  print(name);
+}
+
+
 ```
 
 - `var`: 처음 대입된 값의 타입으로 고정됨 → 이후 타입 변경 시 에러
@@ -183,5 +195,3 @@ try {
 ```
 
 ---
-
-이 정리는 Dart 언어의 기초 구조를 한눈에 이해하고 복습할 수 있도록 예시와 함께 요약한 자료임.
