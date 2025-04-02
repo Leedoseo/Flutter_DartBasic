@@ -8,7 +8,8 @@ void main() {
   // 콘솔에 출력
   print('hello world');
 }
-
+```
+```dart
 // var 선언 예시
 void main() {
   var name = '이도서';
@@ -17,9 +18,9 @@ void main() {
   name = '도서';
   print(name);
 }
-
-
 ```
+
+
 
 - `var`: 처음 대입된 값의 타입으로 고정됨 → 이후 타입 변경 시 에러
 - `dynamic`: 타입 자유로움, 오타나 실수에 민감함 → 주의 필요
