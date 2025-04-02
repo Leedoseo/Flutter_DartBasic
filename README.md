@@ -56,15 +56,18 @@ void main() {
   print(now); // 에러 발생
 }
 ```
+- `DateTime`: Dart에서 날짜와 시간 정보를 다룰 수 있게 해주는 `class`
+  - 주요속성
+    - `print(now.year);`      // 연도 (예: 2025)
+    - `print(now.month);`     // 월 (1~12)
+    - `print(now.day);`       // 일
+    - `print(now.hour);`      // 시
+    - `print(now.minute);`    // 분
+    - `print(now.second);`    // 초
 
 ---
 
 ## ✅ 2. 컬렉션
-
-### ▶ List-add함수
-```dart
-
-```
 
 ### ▶ List (배열)
 ```dart
