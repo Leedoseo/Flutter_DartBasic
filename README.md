@@ -3,7 +3,7 @@
 ## ✅ 1. 변수 선언
 
 ```dart
-var name = "John"; // 타입 추론, String으로 고정됨
+var name = "이도서"; // 타입 추론, String으로 고정됨
 dynamic anything = 123; // 타입 유동적, 나중에 String 등으로 변경 가능
 final age = 30; // 한 번만 할당 가능, 런타임에 결정됨
 const pi = 3.14; // 완전 불변, 컴파일 타임에 값 결정됨
@@ -20,15 +20,15 @@ const pi = 3.14; // 완전 불변, 컴파일 타임에 값 결정됨
 
 ### ▶ List (배열)
 ```dart
-List<String> fruits = ['apple', 'banana'];
-fruits.add('orange');
-print(fruits[0]); // 'apple'
+List<String> fruits = ['apple', 'banana']; // 순서대로 0번쨰, 1번째...
+fruits.add('orange'); // 뒤에 2번째 배열에 orange를 추가
+print(fruits[0]); // 'apple' // 0번째 배열을 출력
 ```
 
 ### ▶ Set (중복 불가)
 ```dart
 Set<int> numbers = {1, 2, 3, 1};
-print(numbers); // {1, 2, 3}
+print(numbers); // {1, 2, 3} 1이 중복이기 때문에 1은 하나만 출력
 ```
 
 ### ▶ Map (딕셔너리)
